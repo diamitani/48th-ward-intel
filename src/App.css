@@ -384,15 +384,47 @@
   .sidebar-wrapper { transform: translateX(-100%); transition: transform var(--transition-slow); }
   .sidebar-wrapper.open { transform: translateX(0); }
   .sidebar { width: var(--sidebar-width) !important; }
+  .content-wrapper { padding: var(--space-md); }
   .results-grid { grid-template-columns: 1fr; }
   .conflicts-grid { grid-template-columns: 1fr; }
   .conflict-sides { flex-direction: column; }
   .tool-page-header { flex-direction: column; }
-  .dashboard-hero { padding: var(--space-xl); }
-  .hero-content h1 { font-size: 1.5rem; }
+  .tool-page-header h1 { font-size: 1.3rem; }
+  .dashboard-hero { padding: var(--space-lg); }
+  .hero-content h1 { font-size: 1.4rem; }
+  .hero-subtitle { font-size: 0.9rem; }
+  .dashboard-stats { grid-template-columns: repeat(2, 1fr); }
+  .tools-grid { grid-template-columns: 1fr; }
   .bot-preview-frame { flex-direction: column; }
-  .bot-widget { width: 100%; }
+  .bot-widget { width: 100%; height: 500px; }
   .proposal-stats-row { grid-template-columns: repeat(2, 1fr); }
+  .proposal-stat-value { font-size: 1.4rem; }
+  .proposal-table { font-size: 0.8rem; }
+  .proposal-table th, .proposal-table td { padding: 8px 10px; }
+  .chat-container { height: calc(100vh - 160px); min-height: 400px; }
+  .chat-input-area { flex-direction: row; }
+  .quick-grid { gap: var(--space-xs); }
+  .quick-btn { font-size: 0.7rem; padding: 6px 10px; }
+  .content-outputs { grid-template-columns: 1fr; }
+  .header-actions { width: 100%; }
+  .clusters-grid { grid-template-columns: 1fr; }
+  .timeline-item { gap: var(--space-sm); }
+  .timeline-marker { width: 30px; height: 30px; font-size: 0.7rem; }
+  .cta-actions { flex-direction: column; align-items: stretch; }
+  .arch-items span { font-size: 0.7rem; }
+  .input-header { flex-direction: column; align-items: flex-start; }
+  .input-footer { flex-direction: column; align-items: stretch; }
+  .input-footer .btn { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .content-wrapper { padding: var(--space-sm) var(--space-md); }
+  .dashboard-stats { grid-template-columns: 1fr 1fr; gap: var(--space-sm); }
+  .stat-value { font-size: 1.4rem; }
+  .proposal-stats-row { grid-template-columns: 1fr 1fr; gap: var(--space-sm); }
+  .type-buttons { flex-direction: column; }
+  .type-buttons .btn { width: 100%; }
+  .embed-info { min-width: unset; }
 }
 
 /* ===== Demo Banner ===== */
